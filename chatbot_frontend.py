@@ -1,6 +1,9 @@
 import streamlit as st
 import chatbot_backend as demo
 
+logo_filename ="UTEM.png"
+st.image(logo_filename, width=300)
+
 st.title("Hola, este es el chatbot UTEMSITO :sunglasses:")
 
 if 'memory' not in st.session_state:
@@ -13,7 +16,7 @@ for message in st.session_state.chat_history:
     with st.chat_message(message["role"]):
         st.markdown(message["text"])
 
-input_text =st.chat_input ("Chatea con utemsito aqui")
+input_text =st.chat_input ("Chatea con utemsito aqui..........")
 
 if input_text:
 

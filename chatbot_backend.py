@@ -6,11 +6,11 @@ from langchain.chains import ConversationChain
 def demo_chatbot():
     demo_llm = Bedrock(
         credentials_profile_name='default',
-        model_id = 'meta.llama2-70b-chat-v1',
+        model_id = 'ai21.j2-mid-v1',
         model_kwargs= {
-            "temperature": 0.9,
-            "top_p": 0.5,
-            "max_gen_len": 128
+            "maxTokens": 500,
+            "temperature": 0.5,
+            "topP": 0.9
         }
     )
     return demo_llm
