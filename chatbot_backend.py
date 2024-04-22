@@ -6,17 +6,14 @@ from langchain.chains import ConversationChain
 def demo_chatbot():
     demo_llm = Bedrock(
         credentials_profile_name='default',
-        model_id = 'ai21.j2-mid-v1',
+        model_id = 'anthropic.claude-v2:1',
         model_kwargs= {
-            "maxTokens": 500,
+            "max_tokens_to_sample": 300,
             "temperature": 0.5,
-            "topP": 0.9
+            "top_p": 0.9
         }
     )
     return demo_llm
-    #return demo_llm.invoke(input_text)
-#response = demo_chatbot('Hola, dime cual es tu nombre?')
-#print(response)
 
 def demo_memory():
     llm_data = demo_chatbot
