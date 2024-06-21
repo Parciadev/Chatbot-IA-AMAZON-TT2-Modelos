@@ -6,9 +6,9 @@ from langchain.chains import ConversationChain
 def demo_chatbot():
     demo_llm = Bedrock(
         credentials_profile_name='default',
-        model_id = 'anthropic.claude-v2:1',
+        model_id = 'anthropic.claude-v2',
         model_kwargs= {
-            "max_tokens_to_sample": 300,
+            "max_tokens_to_sample": 3000,
             "temperature": 0.5,
             "top_p": 0.9
         }
