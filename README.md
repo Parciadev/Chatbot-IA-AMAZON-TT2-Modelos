@@ -1,7 +1,7 @@
 # Proyecto de titulo - Modelos de ML - Pablo Garcia / German Ramirez 
 
 ### Arquitectura del prototipo
-Imagen <img src="">
+Imagen <img src="https://github.com/Parciadev/Chatbot-IA-AMAZON-TT2-Modelos/blob/main/Chatbot-ia-amazon-tt2.png">
 
 ### Configuracion de ambiente de desarrollo (VScode)
 Video: https://youtu.be/MLhADojwmNs
